@@ -30,8 +30,8 @@ public class App
 			System.out.println("Enter another Value");
 	        y = myObj.nextInt();
 	        
-	        sum = x + y;
-	        System.out.println("Addition ans is :" + sum);
+	        addition(x, y);
+	        System.out.println("Addition ans is :" + (x + y));
 			break;
 		
 		case 2:
@@ -43,11 +43,12 @@ public class App
 			System.out.println("Enter another Value");
 	        y = myObj1.nextInt();
 	        
-	        sub = x - y;
-	        System.out.println("Substraction ans is :" + sub);
+	        substraction(x, y);
+	        System.out.println("Substraction ans is :" + (x -y));
 			break;
 			
 		case 3:
+			
 			int mul;
 			Scanner myObj2 = new Scanner(System.in);
 			System.out.println("Enter Value");
@@ -56,8 +57,8 @@ public class App
 			System.out.println("Enter another Value");
 	        y = myObj2.nextInt();
 	        
-	        mul = x * y;
-	        System.out.println("Multipication ans is :" + mul);
+	        multiply(x, y);
+	        System.out.println("Multipication ans is :" + (x * y));
 			break;
 			
 		case 4:
@@ -69,29 +70,29 @@ public class App
 			System.out.println("Enter another Value");
 	        y = myObj3.nextInt();
 	        
-	        div = x / y;
-	        System.out.println("Division ans is :" +  div);
+	        division(x, y);
+	        System.out.println("Division ans is :" +  (x /y));
 			break;
 		}
 		}
 	}
 
-	public int multiply(int x, int y) {
+	public static int multiply(int x, int y) {
 		
 		return x * y;
 	}
 
-	public int addition(int x, int y) {
+	public static int addition(int x, int y) {
 		
 		return x + y;
 	}
 
-	public int substraction(int x, int y) {
+	public static int substraction(int x, int y) {
 		
 		return x - y;
 	}
 
-	public float division(int x, int y) {
+	public static float division(int x, int y) {
 		
 		return x / y;
 	}
